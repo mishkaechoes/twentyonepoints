@@ -3514,14 +3514,6 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
-each-async@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/each-async/-/each-async-1.1.1.tgz#dee5229bdf0ab6ba2012a395e1b869abf8813473"
-  integrity sha1-3uUim98KtrogEqOV4bhpq/iBNHM=
-  dependencies:
-    onetime "^1.0.0"
-    set-immediate-shim "^1.0.0"
-
 easy-extender@^2.3.4:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/easy-extender/-/easy-extender-2.3.4.tgz#298789b64f9aaba62169c77a2b3b64b4c9589b8f"
@@ -4833,17 +4825,17 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
-generator-jhipster-kotlin@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/generator-jhipster-kotlin/-/generator-jhipster-kotlin-1.1.0.tgz#2918ff57ba5fabf04a7415c4bd09d6a319966429"
-  integrity sha512-z+5UmaEa382pVA0eFMo0RJ77IDAvW3KV7gvqeBrVLlQRs5NvgM+cafBQLAr+hXvPS97Jl/Uvip0ND++efKn1cw==
+generator-jhipster-kotlin@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/generator-jhipster-kotlin/-/generator-jhipster-kotlin-1.2.0.tgz#6dd36b70307bb802aef85e0ce44831bb80943955"
+  integrity sha512-pa8iRP7uGRV7hjxXMSrGaxTp2RnKaijlCXLOBCdvEXmCcoTYFGQu2g62EN9qMT2aPVz6t+CpT+LZfUOcBfz6bA==
   dependencies:
     chalk "2.4.2"
     cheerio "1.0.0-rc.2"
     commander "2.19.0"
     didyoumean "1.2.1"
     ejs "2.6.1"
-    generator-jhipster "6.2.0"
+    generator-jhipster "6.3.1"
     glob "7.1.3"
     insight "0.10.1"
     jhipster-core "4.2.0"
@@ -4860,10 +4852,10 @@ generator-jhipster-kotlin@1.1.0:
     yeoman-environment "2.3.4"
     yeoman-generator "3.2.0"
 
-generator-jhipster@6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/generator-jhipster/-/generator-jhipster-6.2.0.tgz#17c3fcb6dafb9d101f26a7a4d34c91128a8d8a44"
-  integrity sha512-anTcNyVZmu8wb2B+v8t4LMp6w4Ua2p1L3pIFnRL4uq+jUShHEjaN93Vqn7iL1IJma4iC4+ug+tKVbmUNwk1sNg==
+generator-jhipster@6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/generator-jhipster/-/generator-jhipster-6.3.1.tgz#c48c7bf4921e7fdf2b622a7eb17776088aaf5b36"
+  integrity sha512-1v3vbk5/C+vrBvEGw2pl4TfgPe2YHhr1T3ROfEjCItgbo9hBWdhcwbAZOLCvaNAc8eYN4DYz+fOoTBnuNnjipw==
   dependencies:
     axios "0.19.0"
     chalk "2.4.2"
@@ -4875,7 +4867,7 @@ generator-jhipster@6.2.0:
     glob "7.1.3"
     gulp-filter "5.1.0"
     insight "0.10.1"
-    jhipster-core "4.2.0"
+    jhipster-core "4.3.0"
     js-object-pretty-print "0.3.0"
     js-yaml "3.13.1"
     lodash "4.17.13"
@@ -4888,12 +4880,13 @@ generator-jhipster@6.2.0:
     randexp "0.5.3"
     semver "5.6.0"
     shelljs "0.8.3"
+    sync-request "6.0.0"
     tabtab "2.2.2"
     through2 "3.0.1"
     uuid "3.3.2"
     yeoman-environment "2.3.4"
     yeoman-generator "3.2.0"
-    yo "2.0.6"
+    yo "3.1.0"
 
 generator-jhipster@6.4.1:
   version "6.4.1"
@@ -6919,6 +6912,16 @@ jhipster-core@4.2.0:
     lodash "4.17.11"
     winston "3.2.1"
 
+jhipster-core@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/jhipster-core/-/jhipster-core-4.3.0.tgz#de945e24a5029efef658a01d0e628cdee277e0c5"
+  integrity sha512-6EY28JQ84FswajMon3n6D9SwbDFYEiU4Yw4Unj2C14XUkB33FMBBs5tXO0uDky8GCCGuFp/fMrDWhYeAMf6vAg==
+  dependencies:
+    chevrotain "4.4.0"
+    fs-extra "8.1.0"
+    lodash "4.17.15"
+    winston "3.2.1"
+
 jhipster-core@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/jhipster-core/-/jhipster-core-5.0.0.tgz#6a85599e40d1980ce282185bcbbaada9f0be7113"
@@ -8572,11 +8575,6 @@ object-path@^0.9.0:
   resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.9.2.tgz#0fd9a74fc5fad1ae3968b586bda5c632bd6c05a5"
   integrity sha1-D9mnT8X60a45aLWGvaXGMr1sBaU=
 
-object-values@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/object-values/-/object-values-1.0.0.tgz#72af839630119e5b98c3b02bb8c27e3237158105"
-  integrity sha1-cq+DljARnluYw7AruMJ+MjcVgQU=
-
 object-visit@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/object-visit/-/object-visit-1.0.1.tgz#f79c4493af0c5377b59fe39d395e41042dd045bb"
@@ -8704,7 +8702,7 @@ opn@5.3.0:
   dependencies:
     is-wsl "^1.1.0"
 
-opn@^5.1.0, opn@^5.3.0:
+opn@^5.1.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/opn/-/opn-5.5.0.tgz#fc7164fab56d235904c51c3b27da6758ca3b9bfc"
   integrity sha512-PqHpggC9bLV0VeWcdKhkpxY+3JTzetLSqTCWL/z/tFIbI6G8JCjondXklT1JinczLz2Xib62sSp0T/gKT4KksA==
@@ -11058,7 +11056,7 @@ set-blocking@^2.0.0, set-blocking@~2.0.0:
   resolved "https://registry.yarnpkg.com/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
   integrity sha1-BF+XgtARrppoA93TgrJDkrPYkPc=
 
-set-immediate-shim@^1.0.0, set-immediate-shim@~1.0.1:
+set-immediate-shim@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/set-immediate-shim/-/set-immediate-shim-1.0.1.tgz#4b2b1b27eb808a9f8dcc481a58e5e56f599f3f61"
   integrity sha1-SysbJ+uAip+NzEgaWOXlb1mfP2E=
@@ -13566,23 +13564,6 @@ yeoman-character@^1.0.0:
   dependencies:
     supports-color "^3.1.2"
 
-yeoman-doctor@^3.0.1:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/yeoman-doctor/-/yeoman-doctor-3.0.3.tgz#d19b1ef07d1d56d5fd992949a4be83ea4bf7e63d"
-  integrity sha512-L/1PUIReI8cOzAWgmBY64VBCLeH2IEpgtnF3X97BUU6SraQFczeXXIzh6n5idG4jfzMfWRF1lS4zf6wdg7hAbw==
-  dependencies:
-    ansi-styles "^3.2.0"
-    bin-version-check "^3.0.0"
-    chalk "^2.3.0"
-    each-async "^1.1.1"
-    global-tunnel-ng "^2.5.3"
-    latest-version "^3.1.0"
-    log-symbols "^2.1.0"
-    object-values "^1.0.0"
-    semver "^5.0.3"
-    twig "^1.10.5"
-    user-home "^2.0.0"
-
 yeoman-doctor@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/yeoman-doctor/-/yeoman-doctor-4.0.0.tgz#f063ed0e782a918f419b7258b9b92d54d010abea"
@@ -13620,7 +13601,7 @@ yeoman-environment@2.3.4:
     text-table "^0.2.0"
     untildify "^3.0.3"
 
-yeoman-environment@^2.0.5, yeoman-environment@^2.3.0, yeoman-environment@^2.4.0:
+yeoman-environment@^2.0.5, yeoman-environment@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/yeoman-environment/-/yeoman-environment-2.4.0.tgz#4829445dc1306b02d9f5f7027cd224bf77a8224d"
   integrity sha512-SsvoL0RNAFIX69eFxkUhwKUN2hG1UwUjxrcP+T2ytwdhqC/kHdnFOH2SXdtSN1Ju4aO4xuimmzfRoheYY88RuA==
@@ -13676,42 +13657,6 @@ yn@^3.0.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/yn/-/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
   integrity sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
-
-yo@2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/yo/-/yo-2.0.6.tgz#7b562f68a0434237c24a1fd3982f235035839516"
-  integrity sha512-1OleNumZXtE/Lo/ZDPsMXqOX8oXr8tpBXYgUGEDAONYqLX3/n3PV3BWkXI7Iwq6vhuAAYPRLinncUe30izlcSg==
-  dependencies:
-    async "^2.6.1"
-    chalk "^2.4.1"
-    cli-list "^0.2.0"
-    configstore "^3.1.2"
-    cross-spawn "^6.0.5"
-    figures "^2.0.0"
-    fullname "^3.2.0"
-    global-tunnel-ng "^2.5.3"
-    got "^8.3.2"
-    humanize-string "^1.0.2"
-    inquirer "^6.0.0"
-    insight "0.10.1"
-    lodash "^4.17.10"
-    meow "^3.0.0"
-    npm-keyword "^5.0.0"
-    opn "^5.3.0"
-    package-json "^5.0.0"
-    parse-help "^1.0.0"
-    read-pkg-up "^4.0.0"
-    root-check "^1.0.0"
-    sort-on "^3.0.0"
-    string-length "^2.0.0"
-    tabtab "^1.3.2"
-    titleize "^1.0.1"
-    update-notifier "^2.5.0"
-    user-home "^2.0.0"
-    yeoman-character "^1.0.0"
-    yeoman-doctor "^3.0.1"
-    yeoman-environment "^2.3.0"
-    yosay "^2.0.2"
 
 yo@3.1.0:
   version "3.1.0"
